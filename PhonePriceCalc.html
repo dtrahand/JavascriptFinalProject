@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Phone Price Calc</title>
+      <!-- CSS STYLING: -->
+    <link rel="stylesheet" href="css/PhonePriceCalc.css">
+      
+      <!-- JAVASCRIPT LIBRARY: -->
+      <script src="./js/jquery-1.11.0.js"></script>
+    </head>
+    
+  <body>
+    <div class="container">
+    <table>
+        <tr><td>
+        <form autocomplete="off" action="#" id="myForm" name="myForm">
+          <fieldset id="PriceCalc">
+              <div style="text-align:center">
+              <span>Phone Price Calculator</span><br>
+              <span id="totalPrice"> Total: </span><br>
+              </div>
+              
+              <!-- BACK COVER -->
+              <!--************-->
+              <div id="BackCoverDiv">Back Cover:<span id="BackCoverPrice"></span><br>
+                  <select name="BackCover" id="BackCover">
+                      <option value="0">--</option>
+                      <option value="600">Ostrich</option>
+                      <option value="800">Crocodile</option>
+                      <option value="750">Python</option>
+                  </select>
+            </div> <!-- End of BACK COVER -->
+              
+              <!-- INTERLACE BASE  -->
+              <!--******************-->
+              <div id="InterlaceBaseDiv">Interlace Base:<span id="InterlaceBasePrice"></span><br>
+                  <select name="InterlaceBase" id="InterlaceBase">
+                      <option value="0">--</option>
+                      <option value="1580">Rose gold</option>
+                      <option value="1500">Yellow gold</option>
+                  </select>
+            </div> <!-- End of INTERLACE BASE -->
+
+            <!-- HEART  -->
+            <!--********-->
+            <br><div id="HeartDiv">Heart:<span id="HeartPrice"></span><br>
+            <form action="#" id="myForm" name="myForm">
+            <label for="Heart2">Write "Blue ceramic" or "Rubies"</label><br>
+            <input id="Heart2" name="Heart2" size="12" type="text">
+            <span id="HeartColorError"></span><br>
+            <button type="submit" name="submit" id="myBtn">Submit Heart color</button>
+            </form>
+            </div> 
+              
+          </form>
+          </fieldset>
+        </td>
+            
+        <td> <!-- Phone picture  -->
+            <canvas id="myCanvas" style="border:3px solid pink;"></canvas>
+        </td>
+            
+        </tr>
+    </table>
+      </div>
+
+    <!-- JAVASCRIPT: -->
+    <script src="js/ImageProcessing.js"></script>
+    <script src="js/PhonePriceCalc.js"></script>
+  </body>
+</html>

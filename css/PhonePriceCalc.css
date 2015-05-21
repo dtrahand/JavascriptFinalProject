@@ -1,0 +1,28 @@
+#PriceCalc {
+    color: #E00046;  /* Pink */
+    border: none;
+}
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+    background-color: #000;
+}
+div {
+    padding-top: 5px;
+}
+table {
+	width: 60%;
+	margin: auto;
+    border: 8px solid;
+    border-radius: 25px;
+    border-color: #E00046; /* Pink */
+}
+
+#totalPrice, 
+#BackCoverPrice, 
+#InterlaceBasePrice, 
+#HeartPrice {
+    color: white;
+}
